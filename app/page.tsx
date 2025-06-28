@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Github, Briefcase, Heart, Zap, Shield } from "lucide-react";
 import { ModeToggle } from "@/components/modetoggle";
+import Image from "next/image";
 
 export default function Component() {
   return (
@@ -16,20 +17,22 @@ export default function Component() {
           {/* Header Section with Image */}
           <div className="mb-12">
             <div className="mb-8">
-              <div className="w-45 h-45 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-500 to-green-600 p-1 shadow-lg">
-                <img
-                  src="/proffesional_image.JPG?height=120&width=120"
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-500 to-green-600 p-1 shadow-lg">
+                <Image
+                  src="/proffesional_image.JPG"
                   alt="Professional headshot"
+                  width={120}
+                  height={120}
                   className="w-full h-full rounded-full object-cover bg-white"
                 />
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-6 dark:from-green-400 dark:to-green-300">
-              What's up! 👋
+              What&apos;s up! 👋
             </h1>
             <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
-              I'm excited you're here! Let's create something amazing together.
-              I bring the perfect mix of
+              I&apos;m excited you&apos;re here! Let&apos;s create something
+              amazing together. I bring the perfect mix of
               <span className="text-green-600 font-semibold dark:text-green-400">
                 {" "}
                 serious expertise
@@ -54,8 +57,8 @@ export default function Component() {
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
                 I believe work should be both impactful and enjoyable. When you
                 work with me, you get someone who takes your goals seriously
-                while keeping the process fun and collaborative. Let's build
-                something incredible!
+                while keeping the process fun and collaborative. Let&apos;s
+                build something incredible!
               </p>
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div className="p-6 rounded-xl bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-700 dark:to-gray-800 border border-green-200 dark:border-gray-600">
@@ -70,7 +73,7 @@ export default function Component() {
                     I promise it
                   </p>
                 </div>
-                <div className="p-6 rounded-xl bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-700 dark:to-gray-800 border border-greeb-200 dark:border-gray-600">
+                <div className="p-6 rounded-xl bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-700 dark:to-gray-800 border border-green-200 dark:border-gray-600">
                   <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Heart className="w-7 h-7 text-white" />
                   </div>
@@ -78,8 +81,8 @@ export default function Component() {
                     Genuinely Caring
                   </h3>
                   <p className="text-sm text-slate-600 dark:text-slate-300">
-                    Your success is my success - I'm invested in making your
-                    vision come to life
+                    Your success is my success - I&apos;m invested in making
+                    your vision come to life
                   </p>
                 </div>
                 <div className="p-6 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-gray-700 dark:to-gray-800 border border-emerald-200 dark:border-gray-600">
@@ -101,10 +104,10 @@ export default function Component() {
           {/* Social Media Links */}
           <div className="mb-12">
             <h3 className="text-3xl font-bold text-slate-800 dark:text-white mb-2">
-              Let's Connect!
+              Let&apos;s Connect!
             </h3>
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
-              Find me on these platforms - I'd love to hear from you!
+              Find me on these platforms - I&apos;d love to hear from you!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
@@ -166,14 +169,14 @@ export default function Component() {
               </h3>
               <p className="text-lg mb-6 text-green-100 dark:text-gray-300">
                 Whether you want to discuss a project, explore opportunities, or
-                just say hi - I'm all ears! Let's start a conversation that
-                could lead to something awesome.
+                just say hi - I&apos;m all ears! Let&apos;s start a conversation
+                that could lead to something awesome.
               </p>
               <a
                 href="mailto:kadencooper608@gmail.com"
                 className="inline-flex items-center justify-center bg-white text-green-600 hover:bg-gray-50 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform text-lg"
               >
-                Let's Talk!
+                Let&apos;s Talk!
               </a>
             </div>
           </div>
